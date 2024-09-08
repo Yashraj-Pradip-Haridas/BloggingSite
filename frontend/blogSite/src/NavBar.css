@@ -1,0 +1,57 @@
+/* Main navigation bar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo section */
+.navbar__logo h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Navigation links list */
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link items */
+.navbar__item {
+  text-transform: uppercase;
+}
+
+/* Link styling */
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+  .navbar__links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .navbar__logo h2 {
+    font-size: 1.2rem;
+  }
+}
